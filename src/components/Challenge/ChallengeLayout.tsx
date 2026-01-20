@@ -5,7 +5,6 @@ import Post from './Post/Post'
 import post1Image from '@/assets/images/Challenge/post/post1.png'
 
 const ChallengeLayout = () => {
-    //api call here
     const [activeDay, setActiveDay] = useState(1)
 
   return (
@@ -15,8 +14,8 @@ const ChallengeLayout = () => {
           <Sidebar active={activeDay} onDayClick={setActiveDay} />
           <div className='w-full h-full bg-bg flex flex-col items-center p-4 overflow-y-auto'>
 
-            {/* postcard container */}
-            <div className='max-w-[640px] w-full'>
+
+            <div className=' w-full flex justify-center pt-10'>
               <Post
                 author={{
                   name: "Ashraf Idrishi"
@@ -32,6 +31,7 @@ const ChallengeLayout = () => {
                   emojis: ["🙏", "😍"]
                 }}
                 commentsCount={10}
+                isSubmission={true}
               />
             </div>
 
