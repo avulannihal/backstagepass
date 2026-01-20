@@ -3,7 +3,7 @@ interface PostMediaProps {
   isVideo?: boolean
 }
 
-const PostMedia = ({ image, isVideo }: PostMediaProps) => {
+const PostMedia = ({ image }: PostMediaProps) => {
   return (
     <div className="relative w-full aspect-video overflow-hidden">
       <img 
