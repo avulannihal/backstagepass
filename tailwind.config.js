@@ -5,11 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
+  safelist: [
+    'bg-solid',
+    'bg-defaultBg',
+    'bg-bg',
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Be Vietnam Pro', 'sans-serif'],
+      },
       colors: {
         bg: "rgb(var(--bg))",
-        surface: "rgb(var(--surface))",
+        solid: "rgb(var(--solid))",
+        defaultBg: "rgb(var(--default))",
 
         textPrimary: "rgb(var(--text-primary))",
         textSecondary: "rgb(var(--text-secondary))",
