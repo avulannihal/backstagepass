@@ -2,7 +2,7 @@ import sidebarBg from '@/assets/images/sidebar/bg.jpg'
 import { days } from '@/constants/contants'
 import DayItem from './DayItem'
 
-const Sidebar = ({ active }: { active: number }) => {
+const Sidebar = ({ active, onDayClick }: { active: number, onDayClick: (dayId: number) => void }) => {
   return (
     <div 
       className='max-w-[250px] w-full h-[calc(100vh-110px)] flex flex-col relative overflow-hidden'
@@ -28,6 +28,7 @@ const Sidebar = ({ active }: { active: number }) => {
             key={day.id}
             day={day}
             isActive={active === day.id}
+            onClick={() => onDayClick(day.id)}
           />
         ))}
       </div>
