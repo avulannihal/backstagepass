@@ -6,7 +6,19 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bg: "rgb(var(--bg))",
+        surface: "rgb(var(--surface))",
+
+        textPrimary: "rgb(var(--text-primary))",
+        textSecondary: "rgb(var(--text-secondary))",
+
+        borderMuted: "rgb(var(--border-muted))",
+
+        accent: "rgb(var(--accent))",
+      },
+    },
   },
   plugins: [],
 }

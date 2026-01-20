@@ -1,0 +1,26 @@
+@layer base {
+    :root {
+      --bg: 247 246 252;            
+      --surface: 255 255 255;   
+      
+      --text-primary: 33 31 38;
+      --text-secondary: 4 0 17;
+
+      --border-muted: 242 239 243;
+
+      --accent: 42 0 253;
+    }
+  
+    .dark {
+      --bg: 3 3 3;                 
+      --surface: 26 25 27;  
+
+      --text-primary: 255 255 255;
+      --text-secondary: 245 241 255;
+
+      --border-muted: 35 34 37;
+
+      --accent: 42 0 253;
+    }
+  }
+  
