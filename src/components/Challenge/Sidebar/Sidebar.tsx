@@ -5,7 +5,7 @@ import DayItem from './DayItem'
 const Sidebar = ({ active, onDayClick }: { active: number, onDayClick: (dayId: number) => void }) => {
   return (
     <div 
-      className='max-w-[250px] w-full h-[calc(100vh-110px)] flex flex-col relative overflow-hidden'
+      className='max-w-[160px] md:max-w-[250px] w-full h-[calc(100vh-110px)] flex flex-col relative overflow-hidden'
       style={{
         backgroundImage: `url(${sidebarBg})`,
         backgroundSize: 'cover',
@@ -22,7 +22,7 @@ const Sidebar = ({ active, onDayClick }: { active: number, onDayClick: (dayId: n
       />
       
 
-      <div className='relative z-10 flex flex-col h-full pt-16 pl-5'>
+      <div className='relative z-10 flex flex-col h-full pt-16 pl-3 md:pl-5'>
         {days.map((day) => (
           <DayItem 
             key={day.id}
