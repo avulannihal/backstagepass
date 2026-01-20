@@ -5,7 +5,7 @@
       --default: 255 255 255 / 0.8;   
       
       --text-primary: 33 31 38;
-      --text-secondary: 4 0 17;
+      --text-secondary: 4 0 17 / 0.61;
 
       --border-muted: 242 239 243;
 
@@ -17,7 +17,7 @@
       --default: 26 25 27 / 0.8;  
 
       --text-primary: 255 255 255;
-      --text-secondary: 245 241 255;
+      --text-secondary:  245 241 255 / 0.72;
 
       --border-muted: 35 34 37;
 

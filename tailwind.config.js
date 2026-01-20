@@ -9,6 +9,8 @@ export default {
     'bg-solid',
     'bg-defaultBg',
     'bg-bg',
+    'text-textPrimary',
+    'text-textSecondary',
   ],
   theme: {
     extend: {
