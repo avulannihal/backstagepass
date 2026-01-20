@@ -21,7 +21,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(config.next)}
-      className="fixed bottom-4 right-4 flex items-center gap-2 bg-surface text-textPrimary px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all border border-borderMuted"
+      className="fixed bottom-4 right-4 flex items-center gap-2 bg-bg text-textPrimary px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all border border-borderMuted"
       aria-label={`Switch to ${config.next} mode`}
     >
       <span className="text-xl">{config.emoji}</span>

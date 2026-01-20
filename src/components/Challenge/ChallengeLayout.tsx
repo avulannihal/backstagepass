@@ -1,17 +1,17 @@
-import { useState } from 'react'
 import Panel from '../layout/Panel'
 import Sidebar from './Sidebar/Sidebar'
 import Post from './Post/Post'
 import { posts } from '@/constants/posts'
+import { useIsMobile } from '@/hooks/useIsMobile'
 
-const ChallengeLayout = () => {
-    const [activeDay, setActiveDay] = useState(1)
+const ChallengeLayout = ({ activeDay, setActiveDay }: { activeDay: number, setActiveDay: (day: number) => void }) => {
+    const isMobile = useIsMobile()
 
   return (
     <div className="flex flex-col h-screen">
-        <Panel currentDay={activeDay} totalDays={30} challengeName="9-Day Fitness Challenge" />
+        {!isMobile && <Panel currentDay={activeDay} totalDays={30} challengeName="9-Day Fitness Challenge" />}
         <div className="flex flex-1 overflow-hidden">
-          <Sidebar active={activeDay} onDayClick={setActiveDay} />
+          {!isMobile && <Sidebar active={activeDay} onDayClick={setActiveDay} />}
           <div className='w-full bg-bg flex flex-col items-center overflow-y-auto'>
             <div className='w-full flex flex-col items-center gap-6 py-10 px-4'>
               {posts.map((post) => (
